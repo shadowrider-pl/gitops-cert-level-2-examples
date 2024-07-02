@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: external-app
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/shadowrider-pl/gitops-cert-level-2-examples
+    # targetRevision: main
+    path: ./simple-application
+  destination:
+    server: https://10.5.0.71:6443
+    namespace: default
+  syncPolicy: 
+    automated: {}
