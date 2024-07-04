@@ -21,7 +21,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: hhttps://github.com/shadowrider-pl/gitops-cert-level-2-examples
+        repoURL: https://github.com/shadowrider-pl/gitops-cert-level-2-examples
         targetRevision: HEAD
         path: '{{path}}'
       destination:
