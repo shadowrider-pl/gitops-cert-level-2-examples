@@ -3,9 +3,11 @@ git clone https://github.com/shadowrider-pl/gitops-cert-level-2-examples.git
 kubectl apply -f https://raw.githubusercontent.com/shadowrider-pl/gitops-cert-level-2-examples/main/app-of-apps/root-app/my-application.yml -n argocd
 
 
-argocd login kubernetes-vm:30443 --insecure --username admin --password YzULY1yyWlpHkYVg
+argocd login kubernetes-vm:30443 --insecure --username admin --password aOJ7USkxwQscjiMD
+
 
 argocd cluster add default --name cluster-2
+argocd cluster add default --name cluster-3
 
 rm app4.yaml && nano app4.yaml
 k apply -f app4.yaml
