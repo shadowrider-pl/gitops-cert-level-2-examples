@@ -9,7 +9,7 @@ spec:
         generators:
           # git generator, 'child' #1
           - git:
-              repoURL: https://github.com/argoproj/argo-cd.git
+              repoURL: https://github.com/shadowrider-pl/gitops-cert-level-2-examples
               revision: HEAD
               directories:
                 - path: application-sets/example-apps/*
@@ -21,7 +21,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/codefresh-contrib/gitops-cert-level-2-examples.git
+        repoURL: hhttps://github.com/shadowrider-pl/gitops-cert-level-2-examples
         targetRevision: HEAD
         path: '{{path}}'
       destination:
