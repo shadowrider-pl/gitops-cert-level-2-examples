@@ -11,3 +11,5 @@ argocd cluster add default --name cluster-3
 
 rm app4.yaml && nano app4.yaml
 k apply -f app4.yaml
+
+ctr images pull ghcr.io/shadowrider-pl/gitops-cert-level-2-examples:1.0
